@@ -2,21 +2,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "bootstrap-icons/font/bootstrap-icons.css"
 
-// import Products from './components/Products.vue'
-// import UserForm from './components/UserForm.vue'
-import Github from './components/Github.vue'
-
-export default{
-	components:{
-		Github
-		// Products,
-		// UserForm
-	}
-}
 </script>
-
 <template>
-	<!-- <Products /> -->
-	<!-- <UserForm /> -->
-	<Github />
+	<p>Choose what part of this page to see:</p><br>
+	<router-link to="/github">Github Search</router-link><br>
+	<router-link to="/products">Products</router-link><br>
+	<router-link to="/userform">UserForm</router-link><br>
+	<div>
+		<router-view></router-view>
+	</div>
 </template>
+
+<style>
+
+div {
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+</style>
