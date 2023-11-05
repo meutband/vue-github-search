@@ -9,9 +9,9 @@ import Products from './components/Products.vue'
 import UserForm from './components/UserForm.vue'
 
 const routes = [
-    { path: '/github', component: Github },
-    { path: '/products', component: Products },
-    { path: '/userform', component: UserForm },
+    { path: '/vue-pages/github', component: Github },
+    { path: '/vue-pages/products', component: Products },
+    { path: '/vue-pages/userform', component: UserForm },
 ]
 
 const router = createRouter({
